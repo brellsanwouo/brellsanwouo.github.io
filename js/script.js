@@ -1,42 +1,32 @@
 document.addEventListener('DOMContentLoaded', () => {
-  /* ===============================
-     Gestion des onglets
-  =============================== */
-  const tabs = document.querySelectorAll('.profile-tabs li');
-  const tabContents = document.querySelectorAll('.tab-content');
+  const toggleButton = document.getElementById('toggle-contrast');
+  const themeKey = 'site-theme';
 
-  tabs.forEach((tab) => {
-    tab.addEventListener('click', () => {
-      tabs.forEach(t => t.classList.remove('active'));
-      tabContents.forEach(content => content.classList.remove('active'));
+  const applyTheme = (isDarkMode) => {
+    document.body.classList.toggle('dark-mode', isDarkMode);
+    if (toggleButton) {
+      toggleButton.textContent = isDarkMode ? '☀️' : '🌙';
+    }
+  };
 
-      tab.classList.add('active');
-      const targetId = tab.getAttribute('data-tab');
-      document.getElementById(targetId).classList.add('active');
-    });
-  });
-
-   /* ===============================
-     Affichage de la boîte de description
-  =============================== */
-  const descriptionBox = document.querySelector('.profile-description-box');
-  if (descriptionBox) {
-    descriptionBox.style.display = 'block';
+  let savedTheme = null;
+  try {
+    savedTheme = localStorage.getItem(themeKey);
+  } catch (error) {
+    savedTheme = null;
   }
 
-  /* ===============================
-     Mode sombre (Toggle contraste)
-  =============================== */
-  const toggleButton = document.getElementById('toggle-contrast');
+  applyTheme(savedTheme === 'dark');
+
   if (toggleButton) {
     toggleButton.addEventListener('click', () => {
-      document.body.classList.toggle('dark-mode');
+      const isDarkMode = !document.body.classList.contains('dark-mode');
+      applyTheme(isDarkMode);
 
-      // Changer l'icône selon le mode
-      if (document.body.classList.contains('dark-mode')) {
-        toggleButton.textContent = '☀️';
-      } else {
-        toggleButton.textContent = '🌙';
+      try {
+        localStorage.setItem(themeKey, isDarkMode ? 'dark' : 'light');
+      } catch (error) {
+        // Local storage can be unavailable in some browser contexts.
       }
     });
   }

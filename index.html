@@ -1,281 +1,145 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Brell SANWOUO</title>
-  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-  integrity="sha512-..."
-  crossorigin="anonymous"
-  referrerpolicy="no-referrer"
-/>
-
+    href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,700&family=Public+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
 <body>
-  <!-- Barre de navigation -->
-  <header class="navbar">
-    <div class="navbar-logo">
-      <a href="#">My Portfolio</a>
-    </div>
-    <div class="navbar-right">
-      <!-- Bouton pour changer le contraste jour/nuit -->
-    <!-- <button id="toggle-contrast" class="toggle-contrast" title="Changer le contraste">
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a href="./index.html" class="brand">Brell SANWOUO</a>
+    <nav class="topnav" aria-label="Main navigation">
+      <a href="./index.html" class="active">Home</a>
+      <a href="./publications.html">Publications</a>
+      <a href="./presentations.html">Presentations</a>
+      <a href="./experience.html">Experience</a>
+      <a href="./academic-path.html">Academic Path</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button id="toggle-contrast" class="toggle-contrast" type="button" aria-label="Toggle dark mode">
       🌙
-    </button> -->
-      </div>
-    </div>
+    </button>
   </header>
 
-  <!-- Profil utilisateur -->
-  <section class="user-profile">
-    <img
-    src="./images/brell_sanwouo.jpeg"
-    alt="User Avatar"
-    class="profile-avatar"
-  />
-    <div class="profile-description-box">
-        <h2 class="profile-name">Brell SANWOUO</h2>
-        <h3 class="profile-username">PhD Student in Computer Science</h3>
-        <p>
-            Working on intelligent multi-agent systems for self-adaptive architectures,
-            I am designing decentralized, agent-driven frameworks for self-adaptive systems.
-            I'm synergizing reinforcement learning, swarm intelligence and goal-driven AI to
-            optimize lightweight, collaborative agents and improve the autonomy of self-adaptive systems.
-        </p>
-      </div>
-  </section>
-
-  <!-- Section Citation -->
-<section class="quote-section">
-    <blockquote>
-      <p>
-        " Whoever wishes to make the world adaptive must first adapt their own
-        perspective, master the subtle art of continuous evolution, and teach every
-        system to dance with uncertainty"
-        Brell SANWOUO
+  <main class="layout">
+    <section class="hero panel" id="home">
+      <p class="name-mark">Brell SANWOUO</p>
+      <p class="hero-lead">
+        My research focuses on self-adaptive, autonomous, and self-evolving software systems
+        through multi-agent orchestration, variability-aware approaches, and energy-aware agents.
       </p>
-    </blockquote>
-  </section>
-
-  <!-- Onglets -->
-  <nav class="profile-tabs">
-    <ul>
-      <li class="active" data-tab="Publications">Publications</li>
-      <li data-tab="about">About Me</li>
-      <li data-tab="contact">Contact</li>
-    </ul>
-  </nav>
-
-  <!-- Contenu principal -->
-  <main>
-    <!-- Section Publications -->
-    <section id="Publications" class="tab-content active">
-        <h2>Publications</h2>
-        <div class="publication-list">
-          <!-- ICSE/SEAMS 2025 -->
-          <article class="publication-item">
-            <div class="pub-header">
-              <!-- Titre de la publication -->
-              <h4 class="pub-title">Dynamic Agent Generation for Self-Adaptive Root Cause Analysis</h4>
-              <!-- Badge -->
-              <span class="conference-badge">SEAMS 2026</span>
-            </div>
-            <!-- Auteurs -->
-            <div class="pub-authors">
-              <p><span class="main-author">Brell SANWOUO</span>, Clément Quinton, and Paul Temple</p>
-            </div>
-            <!-- Détails -->
-            <div class="pub-details">
-              <p>
-                SEAMS'26 - 21st International Conference on Software Engineering for Adaptive and Self-Managing Systems, Apr 2026, Rio de Janeiro, Brazil.
-              </p>
-            </div>
-            <!-- Liens -->
-            <div class="pub-actions">
-              <a href="https://hal.science/hal-05402186/" class="pub-button pdf-button">PDF</a>
-            </div>
-          </article>
-          <!-- ICWS 2025 -->
-          <article class="publication-item">
-            <div class="pub-header">
-              <!-- Titre de la publication -->
-              <h4 class="pub-title">Generative AI-based Adaptation in Microservices Architectures: A Systematic Mapping Study</h4>
-              <!-- Badge -->
-              <span class="conference-badge">ICWS 2025</span>
-            </div>
-            <!-- Auteurs -->
-            <div class="pub-authors">
-              <p><span class="main-author">Brell SANWOUO</span>, Clément Quinton, and Paul Temple</p>
-            </div>
-            <!-- Détails -->
-            <div class="pub-details">
-              <p>
-                In Proceedings of International Conference on Web Services, Jul 2025, Helsinki, Finland, July 7-12, 2025.
-              </p>
-            </div>
-            <!-- Liens -->
-            <div class="pub-actions">
-              <a href="https://hal.science/hal-05082732" class="pub-button pdf-button">PDF</a>
-            </div>
-          </article>
-          <!-- FSE 2025 -->
-          <article class="publication-item">
-            <div class="pub-header">
-              <!-- Titre de la publication -->
-              <h4 class="pub-title">Breaking the Loop: AWARE is the new MAPE-K</h4>
-              <!-- Badge -->
-              <span class="conference-badge">FSE 2025</span>
-            </div>
-            <!-- Auteurs -->
-            <div class="pub-authors">
-              <p><span class="main-author">Brell SANWOUO</span>, Clément Quinton, and Paul Temple</p>
-            </div>
-            <!-- Détails -->
-            <div class="pub-details">
-              <p>
-                In Proceedings of the International Conference on the Foundations of 
-                Software Engineering, Trondheim, Norway, June 23-27, 2025.
-              </p>
-            </div>
-            <!-- Liens -->
-            <div class="pub-actions">
-              <a href="https://hal.science/hal-04992342/document" class="pub-button pdf-button">PDF</a>
-            </div>
-          </article>
-          <!-- BENEVOL 2025 -->          
-          <article class="publication-item">
-            <div class="pub-header">
-              <!-- Titre de la publication -->
-              <h4 class="pub-title">Toward AI-based Complex Self-Adaptive Systems</h4>
-              <!-- Badge -->
-              <span class="workshop-badge">BENEVOL 2024</span>
-            </div>
-            <!-- Auteurs -->
-            <div class="pub-authors">
-              <p><span class="main-author">Brell SANWOUO</span>, Paul Temple and Clément Quinton</p>
-            </div>
-            <!-- Détails -->
-            <div class="pub-details">
-              <p>
-                BENEVOL’24 - 23rd Belgium-Netherlands Software Evolution Workshop, Nov 2024, Namur, Belgium.
-              </p>
-            </div>
-            <!-- Liens -->
-            <div class="pub-actions">
-              <a href="https://inria.hal.science/hal-04896457/document" class="pub-button pdf-button">PDF</a>
-              <a href="https://drive.google.com/file/d/13D7n40ft5yvEGU988_OqV-WAUeU3lWdA/view?usp=sharing" class="pub-button pdf-button">Poster</a>
-            </div>
-          </article>
-          <!-- NCaA 2025 -->          
-          <article class="publication-item">
-            <div class="pub-header">
-              <!-- Titre de la publication -->
-              <h4 class="pub-title">TS-Pothole: automated imputation of missing values in univariate time series</h4>
-              <!-- Badge -->
-              <span class="journal-badge">NCaA Journal</span>
-            </div>
-            <!-- Auteurs -->
-            <div class="pub-authors">
-              <p><span class="main-author">Brell SANWOUO</span>, Clément Quinton, and Romain Rouvoy</p>
-            </div>
-            <!-- Détails -->
-            <div class="pub-details">
-              <p>
-                In Neural Computing and Applications, 2024.
-              </p>
-            </div>
-            <!-- Liens -->
-            <div class="pub-actions">
-              <a href="https://hal.science/hal-04703773v1/file/TS-POTHOLE.pdf" class="pub-button pdf-button">PDF</a>
-            </div>
-          </article>
-        </div>
+      <div class="hero-actions">
+        <a href="./publications.html" class="action-link primary">View publications</a>
+        <a href="#contact" class="action-link">Contact me</a>
       </div>
-      
     </section>
 
-    <!-- Section about -->
-    <section id="about" class="tab-content timeline-section">
-        <h2>About</h2>
-        
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <h3>PhD Student in computer Science</h3>
-              <p>Inria - Univeristy of Lille</p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <h3>Interests</h3>
-              <ul class="timeline-interests">
-                <li>Artificial Intelligence</li>
-                <li>Self-adaptive System</li>
-                <li>Agentic Modeling</li>
-                <li>AI Agents</li>
-                <li>self-improvement of LLM</li>
-              </ul>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <h3>Links</h3>
-              <div class="timeline-links">
-                <a href="https://drive.google.com/file/d/10pp5pn1IrTPi1MKbitJkWzPsWtdEmrjv/view?usp=sharing" class="icon-link" title="CV">
-                  <i class="fa-solid fa-file-lines"></i>
-                </a>
-                
-                <!-- Lien Google Scholar -->
-                <a href="https://scholar.google.com/citations?hl=fr&user=dxPJAXsAAAAJ&view_op=list_works&gmla=ANZ5fUNHX4gjRIscLM9O16SDYbKy1knSNboUVGyhUuxww8OxUwU7X4a7bsNxz4u5eFUTp-s41IOmWaYSfx1OapD2XJgYsa1EHJPGsn6ne2TkqNfZyA" class="icon-link" title="Google Scholar">
-                  <i class="fa-brands fa-google"></i>
-                </a>
-                
-                <!-- Lien LinkedIn -->
-                <a href="https://www.linkedin.com/in/brell-sanwouo/" class="icon-link" title="LinkedIn">
-                  <i class="fa-brands fa-linkedin"></i>
-                </a>
-                
-                <!-- Lien X -->
-                <a href="https://x.com/SanwouoBrell" class="icon-link" title="X">
+    <section id="about" class="panel">
+      <div class="section-head">
+        <p class="section-kicker">Research</p>
+        <h2>My Research Axes</h2>
+      </div>
 
-                  <i class="fa-brands fa-twitter"></i>
-                </a>
+      <div class="axis-grid">
+        <article class="axis-card">
+          <h3>Software System</h3>
+          <ul class="axis-list">
+            <li>Self-adaptive System</li>
+            <li>Autonomous systems</li>
+            <li>Self-evolving systems</li>
+          </ul>
+        </article>
+        <article class="axis-card">
+          <h3>Agents</h3>
+          <ul class="axis-list">
+            <li>Multi-Agent Orchestration</li>
+            <li>Multi-Agent Self-Evolving</li>
+            <li>Variability of agents and Multi-agent system</li>
+            <li>Energy consumption of Agents and Multi-Agents</li>
+          </ul>
+        </article>
+      </div>
 
-                <!-- Lien Kaggle -->
-                <a href="https://www.kaggle.com/brellsanwouo" class="icon-link" title="Kaggle">
-                  <i class="fa-brands fa-kaggle"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          
-        </div>
-      </section>
+      <div class="section-actions">
+        <a href="./publications.html" class="action-link">View my publications</a>
+      </div>
+    </section>
 
-    <!-- Section contact -->
-    <section id="contact" class="tab-content">
-        <h2>Contact</h2>
-        <div class="contact-details">
-          <p>INRIA Lille</p>
-          <p>University of Lille</p>
-          <p>Villeneuve-d'Ascq, France</p>
+    <section class="panel profile-panel">
+      <div class="section-head">
+        <p class="section-kicker">Current Work</p>
+        <h2>What I am currently doing</h2>
+      </div>
+      <div class="current-grid">
+        <article class="status-card">
+          <h3>PhD research at Inria Lille</h3>
           <p>
-            Email:
-            <a href="mailto:brell.sanwouo@inria.fr">brell.sanwouo@inria.fr</a>
+            I am currently developing adaptive software architectures powered by autonomous and
+            collaborative agents, with a strong focus on decision mechanisms and runtime evolution.
           </p>
-        </div>
-      </section>
+        </article>
+        <article class="status-card">
+          <h3>Ongoing focus</h3>
+          <ul class="status-list">
+            <li>Designing multi-agent orchestration for diagnosis and adaptation.</li>
+            <li>Studying agent and multi-agent variability in changing contexts.</li>
+            <li>Evaluating energy-aware behavior in adaptive agent systems.</li>
+            <li>Publishing and sharing results with the software engineering community.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
 
+    <section class="panel">
+      <div class="section-head">
+        <p class="section-kicker">Links</p>
+        <h2>Network and resources</h2>
+      </div>
+      <div class="link-grid">
+        <a href="https://drive.google.com/file/d/10pp5pn1IrTPi1MKbitJkWzPsWtdEmrjv/view?usp=sharing" class="icon-link" title="CV" aria-label="CV">
+          <i class="fa-solid fa-file-lines"></i>
+        </a>
+        <a href="https://scholar.google.com/citations?hl=fr&user=dxPJAXsAAAAJ&view_op=list_works" class="icon-link" title="Google Scholar" aria-label="Google Scholar">
+          <i class="fa-brands fa-google"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/brell-sanwouo/" class="icon-link" title="LinkedIn" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://x.com/SanwouoBrell" class="icon-link" title="X" aria-label="X">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="https://www.kaggle.com/brellsanwouo" class="icon-link" title="Kaggle" aria-label="Kaggle">
+          <i class="fa-brands fa-kaggle"></i>
+        </a>
+      </div>
+    </section>
+
+    <section id="contact" class="panel contact-panel">
+      <p class="section-kicker">Contact</p>
+      <h2>Contact</h2>
+      <p class="contact-copy">INRIA Lille · University of Lille · Villeneuve-d'Ascq, France</p>
+      <a href="mailto:brell.sanwouo@inria.fr" class="mail-link">brell.sanwouo@inria.fr</a>
+    </section>
   </main>
 
-  <!-- Pied de page -->
-  <footer>
-    <p>&copy; Copyright 2025 Brell SANWOUO.</p>
+  <footer class="footer">
+    <p>Made with <i class="fa-solid fa-heart" aria-hidden="true"></i> by Brell SANWOUO</p>
   </footer>
 
   <script src="./js/script.js"></script>
