@@ -4,144 +4,434 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Brell SANWOUO</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,700&family=Public+Sans:wght@400;500;600;700&display=swap"
     rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
   />
   <link
     rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   />
-  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/ashmi-template.css" />
 </head>
 <body>
-  <div class="ambient ambient-one" aria-hidden="true"></div>
-  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <div id="home">
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item ab" href="#home">Brell Sanwouo</a>
+        <button
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbar-menu"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+      </div>
 
-  <header class="topbar">
-    <a href="./index.html" class="brand">Brell SANWOUO</a>
-    <nav class="topnav" aria-label="Main navigation">
-      <a href="./index.html" class="active">Home</a>
-      <a href="./publications.html">Publications</a>
-      <a href="./presentations.html">Presentations</a>
-      <a href="./experience.html">Experience</a>
-      <a href="./academic-path.html">Academic Path</a>
-      <a href="#contact">Contact</a>
+      <div id="navbar-menu" class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item" href="#about-me">About Me</a>
+
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">Activities</a>
+            <div class="navbar-dropdown">
+              <a class="navbar-item" href="#talks">Talks</a>
+              <a class="navbar-item" href="#awards">Awards</a>
+              <a class="navbar-item" href="#volunteering">Community</a>
+            </div>
+          </div>
+
+          <a class="navbar-item" href="#publications">Publications</a>
+
+          <a class="navbar-item" href="./cv.html">CV</a>
+        </div>
+      </div>
     </nav>
-    <button id="toggle-contrast" class="toggle-contrast" type="button" aria-label="Toggle dark mode">
-      🌙
-    </button>
-  </header>
 
-  <main class="layout">
-    <section class="hero panel" id="home">
-      <p class="name-mark">Brell SANWOUO</p>
-      <p class="hero-lead">
-        My research focuses on self-adaptive, autonomous, and self-evolving software systems
-        through multi-agent orchestration, variability-aware approaches, and energy-aware agents.
-      </p>
-      <div class="hero-actions">
-        <a href="./publications.html" class="action-link primary">View publications</a>
-        <a href="#contact" class="action-link">Contact me</a>
+    <section class="Home centeredContainer">
+      <div class="tile is-ancestor">
+        <div class="tile is-parent is-vertical blocks">
+          <div class="tile is-child box">
+            <div class="HeroCV_heroCVContainer__qrVoP">
+              <div class="HeroCV_heroCVImageWrapper__9x_V9">
+                <img
+                  src="./images/Brell_Sanwouo.jpeg"
+                  alt="Brell SANWOUO"
+                  class="HeroCV_heroCVImage__IYv9V"
+                />
+              </div>
+
+              <div class="HeroCV_heroCVBio__lUZhi">
+                <div class="HeroCV_heroCVNameBlock__E_9p5">
+                  <div style="display: flex; align-items: baseline; gap: 0.7rem; flex-wrap: wrap">
+                    <span class="HeroCV_heroCVName__ebTLF">Brell SANWOUO</span>
+                    <span class="HeroCV_heroCVPronouns__ffQbK">PhD</span>
+                  </div>
+                  <div class="HeroCV_heroCVSmallText__XUwIs">MSc. Artificial Intelligence</div>
+                  <div class="HeroCV_heroCVBioText__sidPM">
+                    <p style="color: #0a478a">PhD Candidate @ Inria Lille / University of Lille</p>
+                    <p class="hero-secondary">
+                      Self-Adaptive System &middot; Autonomous System &middot; AI &middot; Multi-agent System Modeling &middot; World Model &middot; Digital Twins
+                    </p>
+                  </div>
+                </div>
+
+                <div class="HeroCV_heroCVSocialsAndButtonRow__Bt_Jy">
+                  <div class="HeroCV_heroCVSocials__eqHfR">
+                    <div class="level hero-social-level">
+                      <a href="mailto:brell.sanwouo@inria.fr" target="_blank" rel="noopener noreferrer" class="hero-icon-link" aria-label="Email">
+                        <i class="fa-solid fa-envelope"></i>
+                      </a>
+                      <a href="https://www.linkedin.com/in/brell-sanwouo/" target="_blank" rel="noopener noreferrer" class="hero-icon-link" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin"></i>
+                      </a>
+                      <a href="https://scholar.google.com/citations?hl=fr&user=dxPJAXsAAAAJ&view_op=list_works" target="_blank" rel="noopener noreferrer" class="hero-icon-link" aria-label="Google Scholar">
+                        <i class="fa-brands fa-google"></i>
+                      </a>
+                      <a href="https://x.com/SanwouoBrell" target="_blank" rel="noopener noreferrer" class="hero-icon-link" aria-label="X">
+                        <i class="fa-brands fa-x-twitter"></i>
+                      </a>
+                      <a href="https://www.kaggle.com/brellsanwouo" target="_blank" rel="noopener noreferrer" class="hero-icon-link" aria-label="Kaggle">
+                        <i class="fa-brands fa-kaggle"></i>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="HeroCV_heroCVButtonGroup__uWEI1">
+                    <a
+                      href="https://drive.google.com/file/d/10pp5pn1IrTPi1MKbitJkWzPsWtdEmrjv/view?usp=sharing"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <button class="HeroCV_heroCVButtonOuter__S6NPM">
+                        <i class="fa fa-download" aria-hidden="true" style="margin-right: 0.5em"></i>Short CV
+                      </button>
+                    </a>
+                    <a href="mailto:brell.sanwouo@inria.fr">
+                      <button class="HeroCV_heroCVButtonSecondary__nSjxb">
+                        <i class="fa fa-envelope" aria-hidden="true" style="margin-right: 0.5em"></i>Contact Me
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tile is-child box flat-section">
+            <p class="section-heading">Recent Highlights</p>
+            <div id="highlights" class="highlight-wrapper">
+              <div class="slideshow-container">
+                <button class="prev" type="button" aria-label="Previous highlight">&#10094;</button>
+                <div class="highlight-card">
+                  <div class="highlight-content" id="highlight-content"></div>
+                </div>
+                <button class="next" type="button" aria-label="Next highlight">&#10095;</button>
+              </div>
+              <div class="dot-container" id="highlight-dots"></div>
+            </div>
+          </div>
+
+          <div class="tile is-child box">
+            <p class="section-heading">About Me</p>
+            <div id="about-me" class="content">
+              <div class="about-me-text">
+                <p>
+                  I am a PhD student at Inria Lille and the University of Lille, where I work at the
+                  intersection of AI and Software Engineering (AI4SE and SE4AI). My goal is to design methods that make software systems and
+                  software engineers more resilient, adaptive, and efficient.
+                </p>
+                <p>
+                  My research covers software architecture, self-adaptive and autonomous systems, AI
+                  agents, and empirical software engineering. A core part of my work is the modeling of
+                  multi-agent systems, software system structures, and behavioral models for adaptation
+                  and autonomy at runtime.
+                </p>
+                <p>
+                  I am also interested in reliable and reproducible AI for Software Engineering, with a
+                  strong focus on innovation and on translating research results into concrete, real-world
+                  software engineering practices.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tile is-child box">
+            <div id="publications" class="content rows">
+              <p class="section-heading">Selected Publications</p>
+              <div class="publications-text">
+                <div class="item publication-item">
+                  <a href="https://hal.science/hal-05402186/" class="publication-title-link-hover" target="_blank" rel="noopener noreferrer">
+                    <b><span>Dynamic Agent Generation for Self-Adaptive Root Cause Analysis</span></b>
+                  </a>
+                  <p>
+                    <span><i style="text-decoration: underline">Brell SANWOUO</i>, Cl&eacute;ment Quinton, and Paul Temple</span>,
+                    <a href="https://hal.science/hal-05402186/" target="_blank" rel="noopener noreferrer" class="pub-venue-link">
+                      SEAMS 2026 (Rank A)
+                    </a>. April 2026.
+                  </p>
+                  <span class="tag is-primary is-normal">
+                    <a href="https://hal.science/hal-05402186/" target="_blank" rel="noopener noreferrer">PDF</a>
+                  </span>
+                  <span class="tag is-info is-normal">
+                    <a href="https://hal.science/hal-05402186v1/bibtex" target="_blank" rel="noopener noreferrer">BibTeX</a>
+                  </span>
+                </div>
+
+                <div class="item publication-item">
+                  <a
+                    href="https://conf.researchr.org/program/seams-2026/program-seams-2026/?date=Tue%2014%20Apr%202026&room=Oceania%20II&prog=Your%20Program&track=SEAMS%20Artifact%20Track"
+                    class="publication-title-link-hover"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <b><span>Artifact of Dynamic Agent Generation for Self-Adaptive Root Cause Analysis</span></b>
+                  </a> 
+                  <span class="artifact-award-badge">
+                        <i class="fa-solid fa-award" aria-hidden="true"></i>
+                        Best Artifact Award
+                  </span>
+                  <p>
+                    <span><i style="text-decoration: underline">Brell SANWOUO</i>, Paul Temple, and Cl&eacute;ment Quinton</span>,
+                    <a
+                      href="https://conf.researchr.org/track/seams-2026/seams-2026-artifact-track"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="pub-venue-link"
+                    >
+                      SEAMS 2026 (Rank A) - Artifact Track
+                    </a>. April 2026.
+                  </p>
+                  <span class="tag is-primary is-normal">
+                    <a href="https://zenodo.org/records/18302941" target="_blank" rel="noopener noreferrer">Artifact</a>
+                  </span>
+                  <span class="tag is-info is-normal">
+                    <a href="https://hal.science/hal-05402186v1/bibtex" target="_blank" rel="noopener noreferrer">BibTeX</a>
+                  </span>
+                </div>
+
+                <div class="item publication-item">
+                  <a href="https://hal.science/hal-05082732" class="publication-title-link-hover" target="_blank" rel="noopener noreferrer">
+                    <b>
+                      <span>Generative AI-based Adaptation in Microservices Architectures: A Systematic Mapping Study</span>
+                    </b>
+                  </a>
+                  <p>
+                    <span><i style="text-decoration: underline">Brell SANWOUO</i>, Cl&eacute;ment Quinton, and Paul Temple</span>,
+                    <a href="https://hal.science/hal-05082732" target="_blank" rel="noopener noreferrer" class="pub-venue-link">
+                      ICWS 2025 (Rank A)
+                    </a>. July 2025.
+                  </p>
+                  <span class="tag is-primary is-normal">
+                    <a href="https://hal.science/hal-05082732" target="_blank" rel="noopener noreferrer">PDF</a>
+                  </span>
+                  <span class="tag is-info is-normal">
+                    <a href="https://hal.science/hal-05082732v2/bibtex" target="_blank" rel="noopener noreferrer">BibTeX</a>
+                  </span>
+                </div>
+
+                <div class="item publication-item">
+                  <a href="https://hal.science/hal-04992342/document" class="publication-title-link-hover" target="_blank" rel="noopener noreferrer">
+                    <b><span>Breaking the Loop: AWARE is the New MAPE-K</span></b>
+                  </a>
+                  <p>
+                    <span><i style="text-decoration: underline">Brell SANWOUO</i>, Cl&eacute;ment Quinton, and Paul Temple</span>,
+                    <a href="https://hal.science/hal-04992342/document" target="_blank" rel="noopener noreferrer" class="pub-venue-link">
+                      FSE 2025 (Rank A*)
+                    </a>. June 2025.
+                  </p>
+                  <span class="tag is-primary is-normal">
+                    <a href="https://hal.science/hal-04992342/document" target="_blank" rel="noopener noreferrer">PDF</a>
+                  </span>
+                  <span class="tag is-info is-normal">
+                    <a href="https://hal.science/hal-04992342v1/bibtex" target="_blank" rel="noopener noreferrer">BibTeX</a>
+                  </span>
+                </div>
+
+                <div class="item publication-item publication-extra is-hidden">
+                  <a href="https://inria.hal.science/hal-04896457/document" class="publication-title-link-hover" target="_blank" rel="noopener noreferrer">
+                    <b><span>Toward AI-based Complex Self-Adaptive Systems</span></b>
+                  </a>
+                  <p>
+                    <span><i style="text-decoration: underline">Brell SANWOUO</i>, Paul Temple and Cl&eacute;ment Quinton</span>,
+                    <a href="https://inria.hal.science/hal-04896457/document" target="_blank" rel="noopener noreferrer" class="pub-venue-link">
+                      BENEVOL 2024
+                    </a>. November 2024.
+                  </p>
+                  <span class="tag is-primary is-normal">
+                    <a href="https://inria.hal.science/hal-04896457/document" target="_blank" rel="noopener noreferrer">PDF</a>
+                  </span>
+                  <span class="tag is-info is-normal">
+                    <a href="https://inria.hal.science/hal-04896457v2/bibtex" target="_blank" rel="noopener noreferrer">BibTeX</a>
+                  </span>
+                </div>
+
+                <div class="item publication-item publication-extra is-hidden">
+                  <a href="https://hal.science/hal-04703773v1/file/TS-POTHOLE.pdf" class="publication-title-link-hover" target="_blank" rel="noopener noreferrer">
+                    <b><span>TS-Pothole: automated imputation of missing values in univariate time series</span></b>
+                  </a>
+                  <p>
+                    <span><i style="text-decoration: underline">Brell SANWOUO</i>, Cl&eacute;ment Quinton, and Romain Rouvoy</span>,
+                    <a href="https://hal.science/hal-04703773v1/file/TS-POTHOLE.pdf" target="_blank" rel="noopener noreferrer" class="pub-venue-link">
+                      Neural Computing and Applications (Rank Q1)
+                    </a>. 2024.
+                  </p>
+                  <span class="tag is-primary is-normal">
+                    <a href="https://hal.science/hal-04703773v1/file/TS-POTHOLE.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
+                  </span>
+                  <span class="tag is-info is-normal">
+                    <a href="https://hal.science/hal-04703773v1/bibtex" target="_blank" rel="noopener noreferrer">BibTeX</a>
+                  </span>
+                </div>
+
+                <div class="publication-footer-note">
+                  For the full publication list, see
+                  <a href="./publications.html">the dedicated publications page</a>
+                  or
+                  <a
+                    href="https://scholar.google.com/citations?hl=fr&user=dxPJAXsAAAAJ&view_op=list_works"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Google Scholar
+                  </a>.
+                </div>
+
+                <button
+                  id="toggle-publications"
+                  class="button is-primary is-light is-centered is-fullwidth show-more-button is-small"
+                  type="button"
+                >
+                  Show all 6 Publications
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="tile is-child box">
+            <div id="talks" class="content rows">
+              <p class="section-heading">Talks &amp; Presentations</p>
+              <div class="activity-list">
+                <article class="activity-item">
+                  <h3>SEAMS 2026 (Research Track) - Dynamic Agent Generation for Self-Adaptive Root Cause Analysis</h3>
+                  <p>Presented in Rio de Janeiro, Brazil.</p>
+                </article>
+                <article class="activity-item">
+                  <h3>
+                    SEAMS 2026 (Artifact Track) - Artifact of Dynamic Agent Generation for Self-Adaptive Root Cause Analysis 
+                    <span class="artifact-award-badge">
+                        <i class="fa-solid fa-award" aria-hidden="true"></i>
+                        Best Artifact Award
+                  </span>
+                  </h3>
+                  <p>Presented in Rio de Janeiro, Brazil, with Best Artifact Award.</p>
+                </article>
+                <article class="activity-item">
+                  <h3>ICWS 2025 - Generative AI-based Adaptation in Microservices Architectures</h3>
+                  <p>Presented in Helsinki, Finland.</p>
+                </article>
+                <article class="activity-item">
+                  <h3>FSE 2025 - Breaking the Loop: AWARE is the New MAPE-K</h3>
+                  <p>Presented in Trondheim, Norway.</p>
+                </article>
+                <article class="activity-item">
+                  <h3>BENEVOL 2024 - Toward AI-based Complex Self-Adaptive Systems</h3>
+                  <p>Workshop poster presented in Namur, Belgium.</p>
+                </article>
+              </div>
+            </div>
+          </div>
+
+          <!--
+          <div class="tile is-child box">
+            <div id="volunteering" class="content rows">
+              <p class="section-heading">Community &amp; Ongoing Focus</p>
+              <ul class="focus-list">
+                <li>Designing multi-agent orchestration for diagnosis and adaptation.</li>
+                <li>Studying agent and multi-agent variability in changing contexts.</li>
+                <li>Evaluating energy-aware behavior in adaptive software systems.</li>
+                <li>Publishing reproducible artifacts and sharing results with the community.</li>
+              </ul>
+            </div>
+          </div>
+          -->
+
+          <div class="tile is-child box">
+            <div id="miscellaneous" class="content rows">
+              <p class="section-heading">Awards &amp; Honours</p>
+              <div class="award-list">
+                <article class="award-highlight-card">
+                  <div class="award-highlight-logo-wrap">
+                    <img src="./images/badge.jpeg" alt="Best artifact award badge" class="award-highlight-logo" loading="lazy" />
+                  </div>
+                  <div class="award-highlight-body">
+                    <div class="award-title-row">
+                      <h3>SEAMS 2026 - Best Artifact Award</h3>
+                      <span class="artifact-award-badge">
+                        <i class="fa-solid fa-award" aria-hidden="true"></i>
+                        Best Artifact Award
+                      </span>
+                    </div>
+                    <p class="award-highlight-meta">Artifact Track &middot; Tue 14 Apr 2026 &middot; Rio de Janeiro, Brazil</p>
+                    <p>
+                      Received the Best Artifact Award for
+                      <em>Artifact of Dynamic Agent Generation for Self-Adaptive Root Cause Analysis</em>
+                      at the SEAMS 2026 Artifact Track.
+                    </p>
+                    <!-- <div class="award-links">
+                      <a
+                        class="inline-card-link"
+                        href="https://conf.researchr.org/program/seams-2026/program-seams-2026/?date=Tue%2014%20Apr%202026&amp;room=Oceania%20II&amp;prog=Your%20Program&amp;track=SEAMS%20Artifact%20Track"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Program entry
+                      </a>
+                      <a
+                        class="inline-card-link"
+                        href="https://conf.researchr.org/track/seams-2026/seams-2026-artifact-track?#event-overview"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Artifact track
+                      </a>
+                    </div> -->
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="about" class="panel">
-      <div class="section-head">
-        <p class="section-kicker">Research</p>
-        <h2>My Research Axes</h2>
+    <footer class="footer">
+      <div class="footer-shell">
+        <div class="footer-icons" aria-label="Footer links">
+          <a class="footer-icon-link" href="#home" aria-label="Home">
+            <i class="fas fa-home" aria-hidden="true"></i>
+          </a>
+          <a class="footer-icon-link" href="mailto:brell.sanwouo@inria.fr" aria-label="Email">
+            <i class="fas fa-envelope" aria-hidden="true"></i>
+          </a>
+          <a class="footer-icon-link" href="https://www.linkedin.com/in/brell-sanwouo/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+          </a>
+          <a class="footer-icon-link" href="https://scholar.google.com/citations?hl=fr&user=dxPJAXsAAAAJ&view_op=list_works" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">
+            <i class="fa-brands fa-google" aria-hidden="true"></i>
+          </a>
+        </div>
+        <p class="footer-signature">Made with <i class="fa-solid fa-heart" aria-hidden="true"></i> by Brell Sanwouo</p>
       </div>
+    </footer>
+  </div>
 
-      <div class="axis-grid">
-        <article class="axis-card">
-          <h3>Software System</h3>
-          <ul class="axis-list">
-            <li>Self-adaptive System</li>
-            <li>Autonomous systems</li>
-            <li>Self-evolving systems</li>
-          </ul>
-        </article>
-        <article class="axis-card">
-          <h3>Agents</h3>
-          <ul class="axis-list">
-            <li>Multi-Agent Orchestration</li>
-            <li>Multi-Agent Self-Evolving</li>
-            <li>Variability of agents and Multi-agent system</li>
-            <li>Energy consumption of Agents and Multi-Agents</li>
-          </ul>
-        </article>
-      </div>
-
-      <div class="section-actions">
-        <a href="./publications.html" class="action-link">View my publications</a>
-      </div>
-    </section>
-
-    <section class="panel profile-panel">
-      <div class="section-head">
-        <p class="section-kicker">Current Work</p>
-        <h2>What I am currently doing</h2>
-      </div>
-      <div class="current-grid">
-        <article class="status-card">
-          <h3>PhD research at Inria Lille</h3>
-          <p>
-            I am currently developing adaptive software architectures powered by autonomous and
-            collaborative agents, with a strong focus on decision mechanisms and runtime evolution.
-          </p>
-        </article>
-        <article class="status-card">
-          <h3>Ongoing focus</h3>
-          <ul class="status-list">
-            <li>Designing multi-agent orchestration for diagnosis and adaptation.</li>
-            <li>Studying agent and multi-agent variability in changing contexts.</li>
-            <li>Evaluating energy-aware behavior in adaptive agent systems.</li>
-            <li>Publishing and sharing results with the software engineering community.</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <section class="panel">
-      <div class="section-head">
-        <p class="section-kicker">Links</p>
-        <h2>Network and resources</h2>
-      </div>
-      <div class="link-grid">
-        <a href="https://drive.google.com/file/d/10pp5pn1IrTPi1MKbitJkWzPsWtdEmrjv/view?usp=sharing" class="icon-link" title="CV" aria-label="CV">
-          <i class="fa-solid fa-file-lines"></i>
-        </a>
-        <a href="https://scholar.google.com/citations?hl=fr&user=dxPJAXsAAAAJ&view_op=list_works" class="icon-link" title="Google Scholar" aria-label="Google Scholar">
-          <i class="fa-brands fa-google"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/brell-sanwouo/" class="icon-link" title="LinkedIn" aria-label="LinkedIn">
-          <i class="fa-brands fa-linkedin"></i>
-        </a>
-        <a href="https://x.com/SanwouoBrell" class="icon-link" title="X" aria-label="X">
-          <i class="fa-brands fa-twitter"></i>
-        </a>
-        <a href="https://www.kaggle.com/brellsanwouo" class="icon-link" title="Kaggle" aria-label="Kaggle">
-          <i class="fa-brands fa-kaggle"></i>
-        </a>
-      </div>
-    </section>
-
-    <section id="contact" class="panel contact-panel">
-      <p class="section-kicker">Contact</p>
-      <h2>Contact</h2>
-      <p class="contact-copy">INRIA Lille · University of Lille · Villeneuve-d'Ascq, France</p>
-      <a href="mailto:brell.sanwouo@inria.fr" class="mail-link">brell.sanwouo@inria.fr</a>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <p>Made with <i class="fa-solid fa-heart" aria-hidden="true"></i> by Brell SANWOUO</p>
-  </footer>
-
-  <script src="./js/script.js"></script>
+  <script src="./js/ashmi-template.js"></script>
 </body>
 </html>

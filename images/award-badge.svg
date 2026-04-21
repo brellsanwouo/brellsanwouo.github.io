@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-label="Award badge">
+  <defs>
+    <radialGradient id="goldCore" cx="50%" cy="42%" r="60%">
+      <stop offset="0%" stop-color="#fff8d4"/>
+      <stop offset="55%" stop-color="#f6d67a"/>
+      <stop offset="100%" stop-color="#d3a73f"/>
+    </radialGradient>
+    <linearGradient id="redRibbon" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#cf1a23"/>
+      <stop offset="100%" stop-color="#8f0f16"/>
+    </linearGradient>
+  </defs>
+
+  <path d="M56 90l-16 52 20-12 14 15 10-49z" fill="url(#redRibbon)"/>
+  <path d="M104 90l16 52-20-12-14 15-10-49z" fill="url(#redRibbon)"/>
+
+  <circle cx="80" cy="68" r="46" fill="#f3df9d"/>
+  <circle cx="80" cy="68" r="41" fill="url(#goldCore)" stroke="#d4a94a" stroke-width="2"/>
+
+  <path d="M60 78c6 6 13 9 20 9 7 0 14-3 20-9" fill="none" stroke="#c69a34" stroke-width="3" stroke-linecap="round"/>
+  <path d="M56 70c0-12 10-22 24-24" fill="none" stroke="#c69a34" stroke-width="3" stroke-linecap="round"/>
+  <path d="M104 70c0-12-10-22-24-24" fill="none" stroke="#c69a34" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="80" cy="68" r="52" fill="none" stroke="#c89a2b" stroke-width="2"/>
+</svg>
