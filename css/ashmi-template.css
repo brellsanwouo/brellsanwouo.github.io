@@ -13,6 +13,12 @@
   --ui-shadow: 0 14px 34px rgba(15, 39, 66, 0.08);
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans',
@@ -24,6 +30,7 @@ body {
     radial-gradient(900px 440px at 100% 0%, rgba(251, 208, 117, 0.15), transparent 58%),
     var(--ui-bg);
   color: var(--ui-ink);
+  overflow-x: hidden;
 }
 
 a {
@@ -40,6 +47,34 @@ a {
 @media screen and (min-width: 769px) {
   .Home {
     padding: 6rem 2rem 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Home {
+    width: calc(100% - 2rem);
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #projects-page .Home {
+    width: auto;
+    max-width: none;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  #projects-page .Home {
+    width: auto;
+    max-width: none;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -65,7 +100,15 @@ a {
   }
 }
 
+#projects-page .Home {
+  width: min(1080px, calc(100% - 2rem));
+  max-width: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .tile.is-child.box {
+  min-width: 0;
   margin-bottom: 1.5rem;
   border: 1px solid var(--ui-line);
   border-radius: 14px;
@@ -103,8 +146,8 @@ a {
 }
 
 .navbar {
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
   border-bottom: 1px solid rgba(84, 94, 105, 0.12);
   background: rgba(249, 252, 255, 0.9);
   box-shadow: 0 6px 26px rgba(14, 33, 55, 0.08);
@@ -113,23 +156,24 @@ a {
 
 .navbar > .navbar-brand,
 .navbar > .navbar-menu {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 @media screen and (min-width: 1024px) {
-  .navbar > .navbar-brand,
-  .navbar > .navbar-menu {
-    max-width: 960px;
-    padding-left: 2rem;
-    padding-right: 2rem;
+  .navbar {
+    padding-left: max(2rem, calc((100% - 960px) / 2 + 2rem));
+    padding-right: max(2rem, calc((100% - 960px) / 2 + 2rem));
   }
 
   .navbar > .navbar-brand {
-    flex-grow: 1;
+    flex: 0 0 auto;
+  }
+
+  .navbar > .navbar-menu {
+    flex: 1 1 auto;
   }
 
   .navbar-menu {
@@ -138,9 +182,9 @@ a {
 }
 
 @media screen and (min-width: 1216px) {
-  .navbar > .navbar-brand,
-  .navbar > .navbar-menu {
-    max-width: 1152px;
+  .navbar {
+    padding-left: max(2rem, calc((100% - 1152px) / 2 + 2rem));
+    padding-right: max(2rem, calc((100% - 1152px) / 2 + 2rem));
   }
 }
 
@@ -695,6 +739,7 @@ a {
   color: #304458;
   font-size: 1rem;
   line-height: 1.6;
+  overflow-wrap: break-word;
 }
 
 .project-grid {
@@ -708,11 +753,13 @@ a {
 }
 
 .project-card {
-  display: flex;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: 58px minmax(0, 1fr);
+  align-items: start;
   gap: 1rem;
   border-top: 1px solid #dfe8f2;
-  padding: 0.95rem 0.2rem 0.35rem;
+  padding: 1rem 0.2rem 0.35rem;
+  min-width: 0;
 }
 
 .project-card:first-child {
@@ -782,6 +829,7 @@ a {
   color: #304458;
   line-height: 1.58;
   margin: 0;
+  overflow-wrap: break-word;
 }
 
 .project-tags {
@@ -804,9 +852,14 @@ a {
 
 .project-links {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   gap: 0.8rem;
-  margin-top: 0.55rem;
+  margin-top: 0.7rem;
+}
+
+.project-links .inline-card-link {
+  margin-top: 0;
 }
 
 .focus-list {
@@ -986,7 +1039,14 @@ a {
   }
 
   .project-card {
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .project-links {
+    gap: 0.6rem;
   }
 }
 
