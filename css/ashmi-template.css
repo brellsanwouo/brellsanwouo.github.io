@@ -686,6 +686,129 @@ a {
   border-color: rgba(8, 57, 105, 0.35);
 }
 
+.projects-page-head {
+  margin-bottom: 0.6rem;
+}
+
+.projects-page-intro {
+  max-width: 760px;
+  color: #304458;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.project-grid {
+  display: grid;
+  gap: 0.95rem;
+  margin-top: 0.65rem;
+}
+
+.project-grid-page {
+  margin-top: 0;
+}
+
+.project-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  border-top: 1px solid #dfe8f2;
+  padding: 0.95rem 0.2rem 0.35rem;
+}
+
+.project-card:first-child {
+  border-top: 0;
+  padding-top: 0.25rem;
+}
+
+.project-card-featured {
+  padding-bottom: 0.2rem;
+}
+
+.project-icon {
+  width: 58px;
+  height: 58px;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #dbe6f3;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #fff 0%, #f8fbff 100%);
+  color: var(--ui-accent);
+  box-shadow: 0 6px 16px rgba(15, 39, 66, 0.08);
+  font-size: 1.35rem;
+}
+
+.project-body {
+  min-width: 0;
+  flex: 1;
+}
+
+.project-title-row {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.3rem;
+}
+
+.project-title-row h2,
+.project-title-row h3 {
+  color: var(--ui-accent);
+  font-size: 1.18rem;
+  line-height: 1.25;
+  margin: 0;
+}
+
+.project-title-row h2 {
+  font-size: clamp(1.2rem, 2vw, 1.45rem);
+}
+
+.project-status {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #c7daee;
+  border-radius: 999px;
+  background: #eef6ff;
+  color: #315f8e;
+  font-size: 0.76rem;
+  font-weight: 700;
+  line-height: 1;
+  padding: 0.28rem 0.58rem;
+  white-space: nowrap;
+}
+
+.project-body p {
+  color: #304458;
+  line-height: 1.58;
+  margin: 0;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.42rem;
+  margin-top: 0.65rem;
+}
+
+.project-tags span {
+  border: 1px solid #d8e4f0;
+  border-radius: 999px;
+  background: #f8fbff;
+  color: #42576d;
+  font-size: 0.8rem;
+  font-weight: 650;
+  line-height: 1;
+  padding: 0.32rem 0.58rem;
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 0.55rem;
+}
+
 .focus-list {
   list-style: disc;
   margin: 1rem 1.3rem;
@@ -859,6 +982,10 @@ a {
 
 @media screen and (max-width: 680px) {
   .award-highlight-card {
+    flex-direction: column;
+  }
+
+  .project-card {
     flex-direction: column;
   }
 }
