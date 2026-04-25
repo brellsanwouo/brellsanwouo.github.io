@@ -757,13 +757,12 @@ a {
   grid-template-columns: 58px minmax(0, 1fr);
   align-items: start;
   gap: 1rem;
-  border-top: 1px solid #dfe8f2;
-  padding: 1rem 0.2rem 0.35rem;
+  border-bottom: 1px solid #dfe8f2;
+  padding: 1rem 0.2rem 1rem;
   min-width: 0;
 }
 
 .project-card:first-child {
-  border-top: 0;
   padding-top: 0.25rem;
 }
 
