@@ -4,6 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Brell SANWOUO - Projects</title>
+  <meta name="description" content="Research artifacts and software projects by Brell Sanwouo in AI, autonomous systems, and software engineering." />
+  <meta name="theme-color" content="#071c24" />
+  <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
   <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
@@ -15,8 +18,10 @@
     referrerpolicy="no-referrer"
   />
   <link rel="stylesheet" href="./css/ashmi-template.css" />
+  <link rel="stylesheet" href="./css/redesign.css" />
 </head>
 <body>
+  <a class="skip-link" href="#project-list">Skip to content</a>
   <div id="projects-page">
     <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
@@ -37,9 +42,10 @@
       <div id="navbar-menu" class="navbar-menu">
         <div class="navbar-end">
           <a class="navbar-item" href="./index.html">Home</a>
-          <a class="navbar-item" href="./index.html#about-me">About Me</a>
-          <a class="navbar-item" href="./index.html#publications">Publications</a>
-          <a class="navbar-item" href="./cv.html">CV</a>
+          <a class="navbar-item" href="./index.html#about-me">Research</a>
+          <a class="navbar-item" href="./publications.html">Publications</a>
+          <a class="navbar-item" href="./projects.html" aria-current="page">Projects</a>
+          <a class="navbar-item nav-cv-link" href="./cv.html">CV <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
         </div>
       </div>
     </nav>
@@ -55,7 +61,7 @@
             </p>
           </div>
 
-          <div class="tile is-child box">
+          <div id="project-list" class="tile is-child box">
             <div class="content rows">
               <div class="project-grid project-grid-page">
                 <article class="project-card project-card-featured">
