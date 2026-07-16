@@ -530,6 +530,37 @@ a { color: inherit; }
 
 .about-me-text p:last-child { border-right: 0; }
 .about-me-text p:nth-child(2) { background: var(--soft); }
+.about-me-text strong {
+  color: var(--ink);
+  font-weight: 900;
+  text-decoration: underline;
+  text-decoration-color: var(--accent-2);
+  text-decoration-thickness: 3px;
+  text-underline-offset: 2px;
+}
+
+.research-keywords {
+  display: flex;
+  align-items: center;
+  gap: .45rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.research-keywords span {
+  padding: .34rem .55rem;
+  border: 2px solid var(--ink);
+  color: var(--ink);
+  font-size: .7rem;
+  font-weight: 800;
+  background: var(--paper);
+}
+
+.research-keywords .research-keywords-label {
+  color: var(--paper);
+  text-transform: uppercase;
+  background: var(--ink);
+}
 
 .publications-text,
 .activity-list,
