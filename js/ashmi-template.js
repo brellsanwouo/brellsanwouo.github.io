@@ -48,7 +48,7 @@ function setupHighlights() {
       meta: 'GDR SciLog 2026 · GT IA · Lille, France',
       desc: 'Research work and project presentation delivered on 2 June 2026 at Polytech Lille.',
       link: 'https://scilog2026.fr/programme',
-      image: './images/city-lille.svg'
+      image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Lille.GrandPlace.JPG/1280px-Lille.GrandPlace.JPG'
     },
     {
       title: 'Dynamic Agent Generation for Self-Adaptive Root Cause Analysis',
