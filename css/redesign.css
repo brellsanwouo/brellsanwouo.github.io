@@ -699,10 +699,13 @@ a { color: inherit; }
 
 .project-icon { display: grid; place-items: center; width: 62px; height: 62px; border: 3px solid var(--ink); border-radius: 0; color: var(--ink); font-size: 1.2rem; background: var(--accent); transform: none; }
 .project-card-agentlantern .project-icon { background: var(--accent-2); }
+.project-card-gear .project-icon { background: #aaa2ff; }
+.project-card-energy .project-icon { background: #f5d76e; }
 .project-card-open-knowledge .project-icon { background: #f5d76e; }
 .project-title-row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
 .project-title-row h2, .project-title-row h3 { margin: 0 !important; color: var(--ink); font-family: var(--mono); font-size: 1.35rem; font-weight: 800; text-transform: uppercase; }
 .project-status { background: var(--accent-2); }
+.project-status.project-status-progress { background: #f5d76e; }
 .project-body > p { max-width: 850px; margin: .55rem 0 .8rem !important; color: var(--muted); font-size: .8rem; }
 .project-tags { display: flex; gap: .35rem; flex-wrap: wrap; }
 .project-tags span { padding: .34rem .58rem; border: 2px solid var(--ink); border-radius: 0; color: var(--ink); font-size: .78rem; font-weight: 800; background: var(--paper); }
@@ -723,6 +726,21 @@ a { color: inherit; }
 }
 .project-links .inline-card-link:first-child { color: var(--ink); background: var(--accent); }
 .project-links .inline-card-link:hover { color: var(--ink); background: var(--accent-2); box-shadow: 4px 4px 0 var(--ink); transform: translate(-2px, -2px); }
+.project-availability {
+  display: inline-flex;
+  align-items: center;
+  gap: .45rem;
+  width: fit-content;
+  min-height: 38px;
+  margin-top: 1rem;
+  padding: .48rem .7rem;
+  border: 3px solid var(--ink);
+  color: var(--muted);
+  font-size: .72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  background: var(--paper);
+}
 
 .projects-page-head {
   min-height: 0 !important;
