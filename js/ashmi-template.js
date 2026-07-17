@@ -44,6 +44,13 @@ function setupHighlights() {
 
   const highlights = [
     {
+      title: 'GDR SciLog — GT IA Research Talk',
+      meta: 'GDR SciLog 2026 · GT IA · Lille, France',
+      desc: 'Research work and project presentation delivered on 2 June 2026 at Polytech Lille.',
+      link: 'https://scilog2026.fr/programme',
+      image: './images/city-lille.svg'
+    },
+    {
       title: 'Dynamic Agent Generation for Self-Adaptive Root Cause Analysis',
       meta: 'SEAMS 2026 · Research Track · Rio de Janeiro',
       desc: 'Talk delivered on Tue 14 Apr 2026 at 11:00 in Oceania II.',
@@ -88,7 +95,7 @@ function setupHighlights() {
 
     contentEl.innerHTML = `
       <div class="highlight-thumbnail">
-        <img class="highlight-img" src="${current.image}" alt="highlight image" />
+        <img class="highlight-img" src="${current.image}" alt="${current.meta}" />
       </div>
       <div class="highlight-text">
         <div class="highlight-title">${current.title}</div>
