@@ -726,20 +726,26 @@ a { color: inherit; }
 }
 .project-links .inline-card-link:first-child { color: var(--ink); background: var(--accent); }
 .project-links .inline-card-link:hover { color: var(--ink); background: var(--accent-2); box-shadow: 4px 4px 0 var(--ink); transform: translate(-2px, -2px); }
-.project-availability {
+.project-private-button {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: .45rem;
   width: fit-content;
   min-height: 38px;
-  margin-top: 1rem;
+  margin-top: 1.45rem;
   padding: .48rem .7rem;
   border: 3px solid var(--ink);
-  color: var(--muted);
+  border-radius: 0;
+  color: var(--paper);
+  font-family: var(--mono);
   font-size: .72rem;
   font-weight: 800;
   text-transform: uppercase;
-  background: var(--paper);
+  background: var(--ink);
+  box-shadow: 3px 3px 0 var(--accent);
+  cursor: not-allowed;
+  opacity: 1;
 }
 
 .projects-page-head {
