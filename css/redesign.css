@@ -692,7 +692,13 @@ a { color: inherit; }
   box-shadow: 8px 8px 0 var(--accent-2);
 }
 
+.project-grid > .project-card:first-child,
+.project-grid > .project-card-featured {
+  padding: 1.4rem;
+}
+
 .project-icon { display: grid; place-items: center; width: 62px; height: 62px; border: 3px solid var(--ink); border-radius: 0; color: var(--ink); font-size: 1.2rem; background: var(--accent); transform: none; }
+.project-card-agentlantern .project-icon { background: var(--accent-2); }
 .project-card-open-knowledge .project-icon { background: #f5d76e; }
 .project-title-row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
 .project-title-row h2, .project-title-row h3 { margin: 0 !important; color: var(--ink); font-family: var(--mono); font-size: 1.35rem; font-weight: 800; text-transform: uppercase; }
